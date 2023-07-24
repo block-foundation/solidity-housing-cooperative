@@ -1,6 +1,6 @@
 {
-  "name": "solidity-land-registry",
-  "description": "Decentralized Land Registry",
+  "name": "solidity-housing-cooperative",
+  "description": "Housing Cooperative",
   "author": "Stichting Block Foundation",
   "version": "0.0.1",
   "license": "Apache-2.0",
@@ -9,13 +9,13 @@
     "blockchain",
     "architecture"
   ],
-  "homepage": "https://github.com/block-foundation/solidity-land-registry#readme",
+  "homepage": "https://github.com/block-foundation/solidity-housing-cooperative#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/block-foundation/solidity-land-registry.git"
+    "url": "git+https://github.com/block-foundation/solidity-housing-cooperative.git"
   },
   "bugs": {
-    "url": "https://github.com/block-foundation/solidity-land-registry/issues"
+    "url": "https://github.com/block-foundation/solidity-housing-cooperative/issues"
   },
   "main": "index.ts",
   "scripts": {
