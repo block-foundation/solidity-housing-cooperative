@@ -9,7 +9,7 @@
 ---
 
 <div>
-    <img align="right" src="https://raw.githubusercontent.com/block-foundation/brand/master/logo/logo_gray.png" width="96" alt="Block Foundation Logo">
+    <img align="right" src="https://raw.githubusercontent.com/block-foundation/brand/master/src/logo/logo_gray.png" width="96" alt="Block Foundation Logo">
     <h1 align="left">Blockchain Housing Cooperative Management</h1>
     <h3 align="left">Block Foundation Smart Contract Series [Solidity]</h3>
 </div>
@@ -17,7 +17,7 @@
 ---
 
 <div>
-<img align="right" width="75%" src="https://raw.githubusercontent.com/block-foundation/brand/master/image/repository_cover/block_foundation-structure-03-accent.jpg"  alt="Block Foundation">
+<img align="right" width="75%" src="https://raw.githubusercontent.com/block-foundation/brand/master/src/image/repository_cover/block_foundation-structure-03-accent.jpg"  alt="Block Foundation">
 <br>
 <details open="open">
 <summary>Table of Contents</summary>
@@ -99,7 +99,7 @@ The contract will keep track of the houses owned by the cooperative, and it will
 
 ### Copyright
 
-Copyright 2023, [Stichting Block Foundation](https://www.blockfoundation.io). All rights reserved.
+Copyright &copy; 2023 [Block Foundation](https://www.blockfoundation.io/ "Block Foundation website"). All Rights Reserved.
 
 ### License
 
