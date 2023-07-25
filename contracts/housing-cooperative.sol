@@ -32,6 +32,10 @@ contract HousingCooperative {
     // Struct
     // ========================================================================
 
+    /**
+     * House
+     * @dev 
+     */
     struct House {
         address id;
         string owner;
@@ -85,6 +89,13 @@ contract HousingCooperative {
     // Methods
     // ========================================================================
 
+    /**
+     * addHouse
+     * @dev 
+     * @param _houseId The _houseId
+     * @param _owner The _owner
+     * @param _price The _price
+     */
     function addHouse(
         address _houseId,
         string memory _owner,
@@ -94,7 +105,12 @@ contract HousingCooperative {
         houseIndex[_houseId] = houses.length - 1;
         emit NewHouse(_houseId, _owner);
     }
-    
+
+    /**
+     * getHouse
+     * @dev 
+     * @param _houseId The _houseId
+     */
     function getHouse(
         address _houseId
     ) public view returns (
@@ -110,7 +126,12 @@ contract HousingCooperative {
             houses[houseIndex[_houseId]].forSale
         );
     }
-    
+
+    /**
+     * changeOwner
+     * @dev 
+     * @param _houseId The _houseId
+     */
     function changeOwner(
         address _houseId,
         string memory _newOwner
@@ -118,6 +139,11 @@ contract HousingCooperative {
         houses[houseIndex[_houseId]].owner = _newOwner;
     }
 
+    /**
+     * putForSale
+     * @dev 
+     * @param _houseId The _houseId
+     */
     function putForSale(
         address _houseId
     ) public onlyHouseOwner(
@@ -126,6 +152,11 @@ contract HousingCooperative {
         houses[houseIndex[_houseId]].forSale = true;
     }
 
+    /**
+     * withdrawFunds
+     * @dev 
+     * @param amount The amount
+     */
     function withdrawFunds(
         uint amount
     ) public {
@@ -137,6 +168,11 @@ contract HousingCooperative {
         payable(msg.sender).transfer(amount);
     }
 
+    /**
+     * buyHouse
+     * @dev 
+     * @param _houseId The _houseId
+     */
     function buyHouse(
         address _houseId
     ) public payable {
